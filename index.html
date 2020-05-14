@@ -1,59 +1,411 @@
 <!DOCTYPE html>
-<html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Home - KatinaKestlevr.github.io</title>
-	<style>
-	@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+  <!--[if IE]><![endif]-->
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"8f098cc979",applicationID:"134517480"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/bookstore/booklist" />
+<link rel="shortlink" href="/node/1815" />
+  <title>Booklist | Bookstore | Columbia Gorge Community College</title>
 
-	*, *:before, *:after {
-		box-sizing: border-box;
-	}
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+  <link rel="shortcut icon" href="//www.cgcc.edu/files/favicon_2.ico" type="image/png" />
+  <link type="text/css" rel="stylesheet" href="https://www.cgcc.edu/sites/default/files/advagg_css/css__aqWO1ur4gK87iOAvU7WbBgLQCvOSNLxl0R8KG0rrbXM__9tbO7RgMB7BnHFuF_t_sFGGkTd5wybOm0wcuDGVLulM__ZhZOEpStMrYRYxlqvvKoeF5DA9g5lpBILESW4PlbM-g.css" media="all" />
+  <script src="https://www.cgcc.edu/sites/default/files/advagg_js/js__ddymWs2P00gE95t-V3iGlMWHVAW4mOWMRS5ofwHnlKI__YS8WWwYXEIoCrYzgzXJC5_mXOWf0l7sQH8_Ks9wcZv0__ZhZOEpStMrYRYxlqvvKoeF5DA9g5lpBILESW4PlbM-g.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-12100716-7", {"cookieDomain":".cgcc.edu"});ga("send", "pageview");</script>
+<script src="https://www.cgcc.edu/sites/default/files/advagg_js/js__W58wJi3iKG2ztfGqNYTfMUmMJuJaXHsGn2Kumm32hDs__M9C7pF7Rk8CITJmfUTfC2pMmWW55h_FDpRBkWhH1rZ0__ZhZOEpStMrYRYxlqvvKoeF5DA9g5lpBILESW4PlbM-g.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"cgcc2016","theme_token":"9t8gUNBjPfsuJlnQS1Mb90Yt621yUv6zHh3e1faPvCo","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/themes\/cgcc2016\/system.menus.css":1,"sites\/all\/themes\/cgcc2016\/system.messages.css":1,"sites\/all\/themes\/cgcc2016\/system.theme.css":1,"sites\/all\/themes\/cgcc2016\/css\/styles.css":1},"js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/field_group\/field_group.js":1,"sites\/all\/themes\/cgcc2016\/js\/autocolumn.min.js":1,"sites\/all\/themes\/cgcc2016\/js\/hoverIntent.js":1,"sites\/all\/themes\/cgcc2016\/js\/jquery.cookie.js":1,"sites\/all\/themes\/cgcc2016\/js\/jquery.tools.min.js":1,"sites\/all\/themes\/cgcc2016\/js\/script.js":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":1,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":1,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0,"useragent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/74.0.3729.131 Safari\/537.36"},"extlink":{"extTarget":0,"extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":"1"},"field_group":{"hidden":"full"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//use.typekit.net/mue6tso.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <style type="text/css">
 
-	html {
-		height: 100%;
-	}
 
-	body {
-		background-size: cover;
-		font-family: 'Raleway', sans-serif;
-		background-color: #f4f4f4; 
-		height: 100%;
-	}
 
-	.text-wrapper {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+    #navigation a {
+      padding: 8px 15px;
+    }
 
-	.title {
-		font-size: 4em;
-		font-weight: 700;
-		color: #333;
-	}
+    #edit-search-theme-form-1-wrapper {
+      float: left;
+      padding-top: 3px;
+    }
+    #edit-search-theme-form-1,
+    #search-field {
+      width: 125px;
+    }
+    #navigation a#n-mycgcc {
+      background-color: #b3cb48;
+    }
 
-	.subtitle {
-		font-size: 16px;
-		font-weight: 700;
-		color: #888;
-		text-align: center;
-	}
-	</style>
+
+
+
+
+
+
+
+  </style>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <link rel="apple-touch-icon" href="/sites/cgcc.us/files/images/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/sites/cgcc.us/files/images/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/sites/cgcc.us/files/images/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/sites/cgcc.us/files/images/touch-icon-ipad-retina.png">
+
 </head>
-<body>
-	<div class="text-wrapper">
-		<div class="title" data-content="404">
-			Under Construction
-		</div>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-1815 node-type-page section-bookstore" >
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      <div id="home-alert">
+    <div class="inner">
+      <a href="#" id="alert-close">Close</a>
+      <p>COVID-19 Pandemic Information: <a href="https://www.cgcc.edu/coronavirus-information-students">For students</a>. <a href="https://www.cgcc.edu/library/online-faculty-hub">For faculty</a>. <a href="https://www.cgcc.edu/coronavirus-information">General Information</a>.</p>
+    </div>
+  </div>
+      
+<div id="top-wrapper">
+  <div id="header-top">
+    <div id="search-box">
+      <form action="#" method="get" id="header-search-form">
+        <input type="text" name="s" value="" id="search-field">
+        <input type="submit" value="search" id="search-submit" class="form-submit">
+      </form>
+    </div>
+    <div id="n1">
+      <ul>
+        <li><a title="CGCC Faculty and Staff contact information and profiles" id="nav-282" href="/directories">Directories</a></li>
+        <li><a id="n-contact" href="/contact">Contact</a></li>
+        <li><a id="n-home" href="/">Home</a></li>
+      </ul>
+    </div>
+    <div id="n2">
+      <ul>
+        <li><a id="nav-861" href="/future-students">Future Students</a></li>
+        <li><a id="nav-862" href="/students">Current Students</a></li>
+        <li><a id="nav-863" href="/business-and-partners">Business &amp; Partners</a></li>
+        <li><a id="nav-864" href="/faculty-and-staff">Faculty &amp; Staff</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-		<div class="subtitle">
-			Our website is currently undergoing scheduled maintenance. <br>
-			We should be back shortly. Thank you for your patience.
-		</div>
-	</div>
-</body>
+<div id="header-wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Columbia Gorge Community College home" src="/sites/all/themes/cgcc2016/images/CGCC-Logo.png"></a>
+    </div>
+  </div>
+</div>
+
+<div id="nav-wrapper">
+  <div id="navigation">
+    <ul id="right-menu">
+      <li><a id="n-mycgcc" href="/mycgcc">MyCGCC</a></li>
+      <li class="mega">
+        <a id="quick-links" href="#">Quick Links</a>
+        <div id="q-links">
+          <div class="inner">
+          <ul>
+            <li id="ql-01"><a href="/schedule">Class Schedule</a></li>
+            <li id="ql-02"><a href="/bookstore">Bookstore</a></li>
+            <li id="ql-03"><a href="/library">Library</a></li>
+            <li id="ql-04"><a href="/admissions">Admissions</a></li>
+            <li id="ql-05"><a href="/financial-aid">Financial Aid</a></li>
+            <li id="ql-06"><a href="/tuition">Tuition and Costs</a></li>
+            <li id="ql-07"><a href="/contact">Maps &amp; Directions</a></li>
+            <li id="ql-08"><a href="/childcare">Child Care Partners</a></li>
+            <li id="ql-09"><a href="/sbdc">SBDC</a></li>
+            <li id="ql-10"><a href="/jobs">Jobs at CGCC</a></li>
+            <li id="ql-11"><a href="/mycgcc">Moodle Log-in (MyCGCC)</a></li>
+          </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul id="main-menu">
+      <li><a id="nav-786" href="/admissions">Admissions</a></li>
+      <li><a id="nav-643" href="/academics">Academics</a></li>
+      <li><a id="nav-644" href="/atoz">A&ndash;Z Index</a></li>
+      <li><a id="nav-calendar" href="/calendar">Calendar</a></li>
+      <li id="gn-news"><a id="nav-341" href="/news">News</a></li>
+      <li><a id="nav-279" href="/about">About</a></li>
+      <li><a id="n-giving" href="https://www.cgccfoundation.org/">Giving</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="page-wrapper" >
+  <div id="page">
+    <div id="main">
+      <div id="content" class="column" role="main">
+        <div class="section">
+                              <a id="main-content"></a>
+                                <h1 class="page__title title" id="page-title">Booklist</h1>
+                                                                                                    
+
+
+<div id="node-1815" class="node node-page view-mode-full clearfix">
+
+  <div class="content">
+                <div class="callout"><div class="inner">
+                        
+        
+        <p><a href="/sites/default/files/bookstore/Spring%20Booklist%202020%20Post.pdf">Spring 2020 Booklist</a></p>
+<p><a href="/sites/default/files/bookstore/Booklist%20Winter%202020.pdf">Winter 2020 Booklist</a></p>
+<p><a href="/sites/default/files/bookstore/Nursing%20Booklist%202019-2020.pdf">Nursing Booklist</a></p>
+              </div></div>
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The booklist contains all relevant materials that the instructor has deemed that are required to take their course.</p>
+<ul><li>Title</li>
+<li>Author</li>
+<li>Publisher</li>
+<li>ISBN</li>
+<li>Price</li>
+</ul><p>Financial aid in the form of grants, loans, or scholarships will not be available to use in the Bookstore until September 16th at 1pm. </p>
+<p>The bookstore endeavors to offer books at the most reasonable prices we can. However books are often found for less online. If you are buying your books from a different source, we <strong>recommend matching the ISBN</strong> from the booklist to be sure that you get the exact same book. Some instructors require books with an online component or access code. When you are buying a book from another location or a used book it may not come with this online component. <strong>Be sure to check the requirements</strong> as you will need to buy any online required materials in order to complete the course, plus the cost is usually more to purchase them separately. The bookstore often offers online codes and books as a bundle that are less expensive.</p>
+<p><span style="line-height: 1.45em;">Due to the high volume of telephone calls before each term, we are </span><strong style="line-height: 1.45em;">unable to provide ISBN's over the phone</strong><span style="line-height: 1.45em;">. Please reference the booklist to see ISBN's for all course textbooks.</span></p>
+</div></div></div>      </div>
+    
+    
+  
+</div><!-- /.node -->
+                            </div>
+      </div>
+
+      
+              <aside class="sidebars">
+                    <div class="region region-sidebar-second column sidebar"><div class="section">
+  
+<div id="block-menu-block-36" class="block block-menu-block first odd">
+      <h2 class="title"><a href="/bookstore" title="" class="active-trail">Bookstore</a></h2>
+    <div class="content">
+    <div class="menu-block-wrapper menu-block-36 menu-name-menu-bookstore parent-mlid-2748 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf is-active-trail is-active first leaf active-trail active menu-mlid-2749"><a href="/bookstore/booklist" title="" class="menu__link is-active-trail active-trail active">Booklist</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2750"><a href="/bookstore/book-buyback" title="Book Buyback" class="menu__link">Buyback</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2753"><a href="/bookstore/refund-policy" title="Refunds" class="menu__link">Refunds</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-5116"><a href="/bookstore/rental" title="Textbook Rental" class="menu__link">Textbook Rental</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2751"><a href="/bookstore/faq" title="Bookstore Frequently Asked Questions" class="menu__link">FAQ</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2752"><a href="/bookstore/contact-bookstore" title="Contact Bookstore" class="menu__link">Contact</a></li>
+</ul></div>
+          <div class="sidebar-follow">
+        Follow us:
+        <a href="https://www.facebook.com/pages/Columbia-Gorge-Community-College-Bookstore-and-Library/130020633698034" class="icon facebook" title="Facebook"></a>
+        <a href="https://plus.google.com/106769003899747212031" class="icon google-plus" title="Google+"></a>
+        <a href="https://twitter.com/#!/columbiagorgecc" class="icon twitter" title="Twitter"></a>
+        <a href="http://www.youtube.com/cgcclive" class="icon youtube" title="YouTube"></a>
+        <a href="http://www.linkedin.com/company/columbia-gorge-community-college" class="icon linkedin" title="Linkedin"></a>
+        <a href="/news/rss" class="icon rss" title="RSS"></a>
+      </div>
+      </div>
+  </div><!-- /.block -->
+<span style="display:none;">&nbsp;</span>
+<div id="block-menu-block-104" class="block block-menu-block even">
+      <h2 class="title">Related</h2>
+    <div class="content">
+    <div class="menu-block-wrapper menu-block-104 menu-name-menu-related-bookstore parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-4036"><a href="/business-office" title="" class="menu__link">Business Office</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-4041"><a href="/financial-aid" title="" class="menu__link">Financial Aid</a></li>
+</ul></div>
+      </div>
+  </div><!-- /.block -->
+<span style="display:none;">&nbsp;</span>
+<div id="block-menu-block-93" class="block block-menu-block last odd">
+      <h2 class="title"><a href="/arts-humanities" title="Arts and Humanities Department">Arts &amp; Humanities Department</a></h2>
+    <div class="content">
+    <div class="menu-block-wrapper menu-block-93 menu-name-menu-arts-humanities-program parent-mlid-3736 menu-level-1">
+  <ul class="menu"><li class="menu__item is-collapsed first collapsed menu-mlid-2980"><a href="/arts-humanities/art" title="" class="menu__link">Art</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2984"><a href="/arts-humanities/music" title="" class="menu__link">Music</a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-2987"><a href="/arts-humanities/philosophy" title="Philosophy" class="menu__link">Philosophy</a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-2993"><a href="/arts-humanities/theatre-arts" title="Theatre Arts" class="menu__link">Theatre Arts</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3746"><a href="/arts-humanities/contact" title="Contact the Arts and Humanities Program" class="menu__link">Contact</a></li>
+</ul></div>
+          <div class="sidebar-follow">
+        Follow us:
+        <a href="http://www.facebook.com/ColumbiaGorgeCommunityCollege" class="icon facebook" title="Facebook"></a>
+        <a href="https://plus.google.com/106769003899747212031" class="icon google-plus" title="Google+"></a>
+        <a href="https://twitter.com/#!/columbiagorgecc" class="icon twitter" title="Twitter"></a>
+        <a href="http://www.youtube.com/cgcclive" class="icon youtube" title="YouTube"></a>
+        <a href="http://www.linkedin.com/company/columbia-gorge-community-college" class="icon linkedin" title="Linkedin"></a>
+        <a href="/news/rss" class="icon rss" title="RSS"></a>
+      </div>
+      </div>
+  </div><!-- /.block -->
+<span style="display:none;">&nbsp;</span>	</div></div><!-- /.section, /.region -->        </aside>
+          </div>
+  </div>
+</div>
+
+<div id="banner-wrapper">
+  <div id="banner">
+    <div class="connect">
+      <h4><a href="/social">Stay Connected</a></h4>
+      <div><a title="Facebook" href="https://www.facebook.com/ColumbiaGorgeCommunityCollege"><img src="/sites/default/files/images/facebook-logo-25.png" alt="Facebook"/></a></a><a title="Google+" href="https://plus.google.com/106769003899747212031"><img src="/sites/default/files/images/google-plus-logo-25.png" alt="Google+"/></a><a title="Twitter" href="https://twitter.com/#!/columbiagorgecc"><img src="/sites/default/files/images/twitter-logo-25.png" alt="Twitter"/></a><a title="YouTube" href="http://www.youtube.com/cgcclive"><img src="/sites/default/files/images/youtube-25.png" alt="YouTube"/></a><a title="Linkedin" href="http://www.linkedin.com/company/columbia-gorge-community-college"><img src="/sites/default/files/images/linkedin-25.png" alt="LinkedIn"/></a><a title="RSS" href="/feeds"><img src="/sites/default/files/images/rss-25.png" alt="RSS"/></a></div>
+          </div>
+    <div class="tweets">
+      <a href="https://twitter.com/columbiagorgecc"><img src="/sites/default/files/images/twitter-logo-h.png" alt="Twitter"/></a>
+          </div>
+  </div>
+</div>
+
+<div id="footer-wrapper">
+<div id="footer">
+
+  <div class="big-button"><a href="/admissions">Apply Today</a></div>
+  <div class="columns">
+  <div class="column column-1 a" style="padding-bottom:7em;">
+    <ul id="">
+      <li><a href="/financial-aid/apply">Apply for Financial Aid</a></li>
+      <li><a href="/mycgcc">Log in to MyCGCC (Moodle)</a></li>
+      <li><a href="/advising/contact">Meet with an Advisor</a></li>
+      <li><a href="/mycgcc">Pay Tuition and Fees</a></li>
+      <li><a href="/registration-process">Register for Classes</a></li>
+      <li><a href="/jobs">Jobs at CGCC</a></li>
+      <li><a href="/social">Stay Connected</a></li>
+    </ul>
+        <div class="page-tools">
+          <div class="share">Share this page:
+            <a href="http://www.facebook.com/sharer.php?u=https://appserver-c1bfdea2/bookstore/booklist&t=Booklist | Columbia Gorge Community College"><img src="/sites/default/files/images/icon-facebook.png"/ alt="Facebook"></a>
+            
+            <a href="https://plus.google.com/share?url=https://appserver-c1bfdea2/bookstore/booklist"><img src="/sites/default/files/images/icon-google-plus.png" alt="Google+"/></a>
+                        
+            <a href="http://twitter.com/home?status=Check out this page: https://appserver-c1bfdea2/bookstore/booklist - Booklist"><img src="/sites/default/files/images/icon-twitter.png" alt="Twitter"/></a>
+
+          </div>
+          <div class="translate">
+            <div>Translate</div>
+            <script type="text/javascript">
+/* <![CDATA[ */
+eval(unescape("eval%28function%28p%2Ca%2Cc%2Ck%2Ce%2Cr%29%7Be%3Dfunction%28c%29%7Breturn%28c%3Ca%3F%27%27%3Ae%28parseInt%28c/a%29%29%29+%28%28c%3Dc%25a%29%3E35%3FString.fromCharCode%28c+29%29%3Ac.toString%2836%29%29%7D%3Bif%28%21%27%27.replace%28/%5E/%2CString%29%29%7Bwhile%28c--%29r%5Be%28c%29%5D%3Dk%5Bc%5D%7C%7Ce%28c%29%3Bk%3D%5Bfunction%28e%29%7Breturn%20r%5Be%5D%7D%5D%3Be%3Dfunction%28%29%7Breturn%27%5C%5Cw+%27%7D%3Bc%3D1%7D%3Bwhile%28c--%29if%28k%5Bc%5D%29p%3Dp.replace%28new%20RegExp%28%27%5C%5Cb%27+e%28c%29+%27%5C%5Cb%27%2C%27g%27%29%2Ck%5Bc%5D%29%3Breturn%20p%7D%28%276%207%28a%2Cb%29%7Bn%7B4%282.9%29%7B3%20c%3D2.9%28%22o%22%29%3Bc.p%28b%2Cf%2Cf%29%3Ba.q%28c%29%7Dg%7B3%20c%3D2.r%28%29%3Ba.s%28%5C%27t%5C%27+b%2Cc%29%7D%7Du%28e%29%7B%7D%7D6%20h%28a%29%7B4%28a.8%29a%3Da.8%3B4%28a%3D%3D%5C%27%5C%27%29v%3B3%20b%3Da.w%28%5C%27%7C%5C%27%29%5B1%5D%3B3%20c%3B3%20d%3D2.x%28%5C%27y%5C%27%29%3Bz%283%20i%3D0%3Bi%3Cd.5%3Bi++%294%28d%5Bi%5D.A%3D%3D%5C%27B-C-D%5C%27%29c%3Dd%5Bi%5D%3B4%282.j%28%5C%27k%5C%27%29%3D%3DE%7C%7C2.j%28%5C%27k%5C%27%29.l.5%3D%3D0%7C%7Cc.5%3D%3D0%7C%7Cc.l.5%3D%3D0%29%7BF%286%28%29%7Bh%28a%29%7D%2CG%29%7Dg%7Bc.8%3Db%3B7%28c%2C%5C%27m%5C%27%29%3B7%28c%2C%5C%27m%5C%27%29%7D%7D%27%2C43%2C43%2C%27%7C%7Cdocument%7Cvar%7Cif%7Clength%7Cfunction%7CGTranslateFireEvent%7Cvalue%7CcreateEvent%7C%7C%7C%7C%7C%7Ctrue%7Celse%7CdoGTranslate%7C%7CgetElementById%7Cgoogle_translate_element2%7CinnerHTML%7Cchange%7Ctry%7CHTMLEvents%7CinitEvent%7CdispatchEvent%7CcreateEventObject%7CfireEvent%7Con%7Ccatch%7Creturn%7Csplit%7CgetElementsByTagName%7Cselect%7Cfor%7CclassName%7Cgoog%7Cte%7Ccombo%7Cnull%7CsetTimeout%7C500%27.split%28%27%7C%27%29%2C0%2C%7B%7D%29%29"))
+/* ]]> */
+</script><style type="text/css">
+<!--
+#goog-gt-tt {display:none !important;}
+
+.goog-te-banner-frame {display:none !important;}
+
+.goog-te-menu-value:hover {text-decoration:none !important;}
+
+body {top:0 !important;}
+
+#google_translate_element2 {display:none!important;}
+-->
+</style><div id="google_translate_element2"></div>
+<script type="text/javascript">function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element2');}</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|af" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -688px;padding-left:18px;">Afrikaans</option><option value="en|sq" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -560px;padding-left:18px;">Albanian</option><option value="en|ar" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -16px;padding-left:18px;">Arabic</option><option value="en|hy" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -832px;padding-left:18px;">Armenian</option><option value="en|az" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -848px;padding-left:18px;">Azerbaijani</option><option value="en|eu" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -864px;padding-left:18px;">Basque</option><option value="en|be" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -768px;padding-left:18px;">Belarusian</option><option value="en|bg" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -32px;padding-left:18px;">Bulgarian</option><option value="en|ca" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -384px;padding-left:18px;">Catalan</option><option value="en|hr" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -80px;padding-left:18px;">Croatian</option><option value="en|cs" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -96px;padding-left:18px;">Czech</option><option value="en|da" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -112px;padding-left:18px;">Danish</option><option value="en|nl" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -128px;padding-left:18px;">Dutch</option><option value="en|et" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -576px;padding-left:18px;">Estonian</option><option value="en|tl" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -400px;padding-left:18px;">Filipino</option><option value="en|fi" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -144px;padding-left:18px;">Finnish</option><option value="en|fr" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|gl" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -592px;padding-left:18px;">Galician</option><option value="en|ka" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -880px;padding-left:18px;">Georgian</option><option value="en|de" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|el" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -192px;padding-left:18px;">Greek</option><option value="en|ht" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -896px;padding-left:18px;">Haitian Creole</option><option value="en|iw" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -416px;padding-left:18px;">Hebrew</option><option value="en|hi" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -208px;padding-left:18px;">Hindi</option><option value="en|hu" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -608px;padding-left:18px;">Hungarian</option><option value="en|is" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -784px;padding-left:18px;">Icelandic</option><option value="en|id" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -432px;padding-left:18px;">Indonesian</option><option value="en|ga" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -736px;padding-left:18px;">Irish</option><option value="en|it" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -224px;padding-left:18px;">Italian</option><option value="en|ja" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|lv" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -448px;padding-left:18px;">Latvian</option><option value="en|lt" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -464px;padding-left:18px;">Lithuanian</option><option value="en|mk" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -800px;padding-left:18px;">Macedonian</option><option value="en|ms" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -704px;padding-left:18px;">Malay</option><option value="en|mt" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -624px;padding-left:18px;">Maltese</option><option value="en|no" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -272px;padding-left:18px;">Norwegian</option><option value="en|fa" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -672px;padding-left:18px;">Persian</option><option value="en|pl" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -288px;padding-left:18px;">Polish</option><option value="en|pt" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -304px;padding-left:18px;">Portuguese</option><option value="en|ro" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -320px;padding-left:18px;">Romanian</option><option value="en|ru" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -336px;padding-left:18px;">Russian</option><option value="en|sr" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -480px;padding-left:18px;">Serbian</option><option value="en|sk" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -496px;padding-left:18px;">Slovak</option><option value="en|sl" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -512px;padding-left:18px;">Slovenian</option><option value="en|es" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option><option value="en|sw" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -720px;padding-left:18px;">Swahili</option><option value="en|sv" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -368px;padding-left:18px;">Swedish</option><option value="en|th" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -640px;padding-left:18px;">Thai</option><option value="en|tr" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -656px;padding-left:18px;">Turkish</option><option value="en|uk" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -528px;padding-left:18px;">Ukrainian</option><option value="en|ur" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -912px;padding-left:18px;">Urdu</option><option value="en|vi" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -544px;padding-left:18px;">Vietnamese</option><option value="en|cy" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -752px;padding-left:18px;">Welsh</option><option value="en|yi" style="background:url('/sites/all/modules/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -816px;padding-left:18px;">Yiddish</option></select>          </div>
+        </div>
+  </div>
+
+  <div class="column column-3">
+    <h4><a href="/admissions">Admissions</a></h4>
+    <ul id="">
+      <li><a href="/admissions/new-student-checklist">New Student Checklist</a></li>
+      <li><a href="/tuition">Tuition & Costs</a></li>
+      <li><a href="/admissions/admissions-policy">Admissions Policy</a></li>
+    </ul>
+    
+    <h4><a href="/academics">Academics</a></h4>
+    <ul id="">
+      <li><a href="/academic-calendar">Academic Calendar</a></li>
+      <li><a href="/advising">Advising</a></li>
+      <li><a href="/catalog">Catalog</a></li>
+      <li><a href="/schedule">Class Schedule</a></li>
+      <li><a href="/online">Online / Hybrid Classes</a></li>
+      <li><a href="/academics/dual-enrollment">Dual Enrollment</a></li>
+      <li><a href="/transfer-credits">Transfer Credits</a></li>
+      <li><a href="/success">Student Success</a></li>
+      <li><a href="/course-evaluations">Course Evaluations</a></li>
+      <li><a href="/graduation">Graduation</a></li>
+            <li><a href="/academics/gainful-employment">Gainful Employment</a></li>
+      
+      
+    </ul>
+    
+  </div>
+  <div class="column column-4">
+    <h4><a href="/atoz">A-Z Index</a></h4>
+    <h4><a href="/calendar">Calendar</a></h4>
+    <ul id="">
+      <li><a href="/academic-calendar">Academic Calendar</a></li>
+      <li><a href="/key-dates">Key Dates</a></li>
+    </ul>
+    <h4><a href="/news">News</a></h4>
+    <ul id="">
+      <li><a href="/alerts">Flash Alerts</a></li>
+      <li><a href="/social">Social Media</a></li>
+      <li><a href="/press-releases">Press Releases</a></li>
+      <li><a href="/newsletter">Campus View Newsletter</a></li>
+      <li><a href="/feeds">RSS Feeds</a></li>
+    </ul>
+        <h4><a href="/financial-aid">Financial Aid</a></h4>
+  </div>
+  <div class="column column-5">
+    <h4><a href="/about">About CGCC</a></h4>
+    <ul id="">
+      <li><a href="/accreditation">Accreditation</a></li>
+            <li><a href="/about/consumer-information">Consumer Information</a></li>
+      <li><a href="/institutional-assessment">Institutional Assessment</a></li>
+      <li><a href="/about/institutional-planning">Institutional Planning</a></li>
+      <li><a href="/mission">Mission Statement</a></li>
+      <li><a href="/presidents-office">President's Office</a></li>
+      <li><a href="/safety">Safety</a></li>
+      <li><a href="/sustainability">Sustainability</a></li>
+      <li><a href="/policies">Policies</a></li>
+      <li><a href="/about/history">History</a></li>
+      <li><a href="/recreation">Recreation</a></li>
+    </ul>
+    <h4><a href="https://www.cgccfoundation.org/">Giving</a></h4>
+    <ul id="">
+      <li><a href="https://www.cgccfoundation.org/about-us/overview">About CGCC Foundation</a></li>
+      <li><a href="https://www.cgccfoundation.org/how-to-give/online-giving">Donate Now</a></li>
+    </ul>
+  </div>
+  <div class="column column-2" style="margin-left:15px;margin-right:0;padding-right:0;">
+
+    <ul>
+      <li><a href="/future-students">Future Students</a></li>
+      <li><a href="/students">Current Students</a></li>
+      <li><a href="/business-and-partners">Business & Partners</a></li>
+      <li><a href="/faculty-and-staff">Faculty & Staff</a></li>
+      <li><a href="/directories">Directories</a></li>
+    </ul>
+
+  </div>
+  </div>
+  <div class="contact">
+    <h4><a href="/contact">Contact, Maps & Directions, Commuting Options</a></h4>
+    <p><strong>The Dalles Campus</strong> (541) 506-6000, Monday - Friday, 8 am - 5 pm</p>
+    <p><strong>Hood River - Indian Creek Campus</strong> (541) 308-8211, Monday - Thursday, 8 am - 6 pm; Friday, 8 am - 12 pm</p>
+  </div>
+  <div class="copyright">
+      <p style="padding-bottom: 5px;">It is the policy of Columbia Gorge Community College and its Board of Education that there will be no unlawful discrimination or harassment on the grounds of race, color, sex, marital status, national origin, religion, age, disability, veteran status, sexual orientation, and any other status protected by applicable local, state, or federal law in any educational programs, activities, or employment. <a href="/courtney-judah">Courtney Judah</a>, Director of Human Resources, (541) 506-6151.</p>
+    <p>
+      &copy;2020 Columbia Gorge Community College (CGCC) - building dreams, transforming lives <span>|</span> <a href="#block-webform-client-block-1425" id="webmaster-link">Webmaster</a> <span style="color:#666;">(report problems)</span> <span>|</span> <a href="/about/iibga-electronic-communications-system">Privacy Policy</a> <span>|</span> <a href="/">Home</a>
+            <span>|</span> <a href="/user">Log In</a>
+          </p>
+  </div>
+</div>
+</div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8f098cc979","applicationID":"134517480","transactionName":"MgNWYxRRW0UEWhUNXwtJdVQSWVpYSlcOAFU6FlVQA29DXwBO","queueTime":0,"applicationTime":226,"atts":"HkRVFVxLSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
